@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade 2</title>
+</head>
+<body>
+
+    <h1 id="titulo"></h1>
+    <img id="imagem" src="" alt="Imagem do Semestre">
+
+    <script>
+        const names = [
+            'Desenvolvimento de Sistemas II',
+            'Banco de Dados III',
+            'Linguagem, Trabalho e Tecnologia',
+            'Segurança de Sistemas de Informação',
+            'Internet e Protocolos',
+            'Programação de Aplicativos Mobile II',
+            ''
+        ];
+        const images = [
+            'img/desenvolviSistemas.jpg',
+            'img/bancoDados.webp',
+            'img/linguagem.jpeg',
+            'img/seguranca.jpg',
+            'img/internetProtocolos.jpg',
+            'img/mobileGanyu.jpg',
+            'img/desenvolvitcc.jpg',
+        ];
+
+        const randomIndex = Math.floor(Math.random() * names.length);
+        
+        document.getElementById('titulo').innerText = names[randomIndex];
+        document.getElementById('imagem').src = images[randomIndex];
+
+    </script>
+
+</body>
+</html>
