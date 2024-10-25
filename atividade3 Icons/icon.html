@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <div class="taskbar">
+        <div class="icon">
+            <img src="img/chrome-1.png" alt="Chrome">
+            <img src="img/chrome-2.png" alt="Chrome maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/youtube-1.png" alt="Youtube">
+            <img src="img/youtube-2.png" alt="Youtube maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/drive-1.png" alt="Drive">
+            <img src="img/drive-2.png" alt="Drive maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/playStore-1.png" alt="Play Store">
+            <img src="img/playStore-2.png" alt="Play Store maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/gmail-1.png" alt="Gmail">
+            <img src="img/gmail-2.png" alt="Gmail maior" class="large">
+        </div>
+        
+        <div class="icon">
+            <img src="img/tranlate-1.png" alt="Tradutor">
+            <img src="img/tranlate-2.png" alt="Tradutor maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/settings-1.png" alt="Configuração">
+            <img src="img/settings-2.png" alt="Configuração maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/steam-1.png" alt="Steam">
+            <img src="img/steam-2.png" alt="Steam maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/search-1.png" alt="Busca">
+            <img src="img/search-2.png" alt="Busca maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/calendar-1.png" alt="Calendário">
+            <img src="img/calendar-2.png" alt="Calendário maior" class="large">
+        </div>
+        <div class="icon">
+            <img src="img/lixo-1.png" alt="Lixeira">
+            <img src="img/lixo-2.png" alt="Lixeira maior" class="large">
+        </div>
+    </div>
+
+    <script>
+        const icons = document.querySelectorAll('.icon');
+
+        icons.forEach(icon => {
+            icon.addEventListener('mouseenter', () => {
+                icon.classList.add('active');
+            });
+
+            icon.addEventListener('mouseleave', () => {
+                icon.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

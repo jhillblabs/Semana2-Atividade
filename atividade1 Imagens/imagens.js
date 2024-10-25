@@ -1,4 +1,4 @@
-var num = Math.floor(Math.random() * 7);
+var num = Math.floor(Math.random() * 8);
 var imagens = [
     'img/desenvolviSistemas.jpg',
     'img/bancoDados.webp',
@@ -7,6 +7,7 @@ var imagens = [
     'img/internetProtocolos.jpg',
     'img/mobileGanyu.jpg',
     'img/desenvolvitcc.jpg',
+    'img/pokedexWeb.png'
 ];
 var visualizar = imagens[num];
 document.write('<h1> APERTE F5 </h1>');
